@@ -14,8 +14,12 @@ h2{
     text-align: center;
 }
 
-#jokes{
+#joke{
     text-align: center;
+    border:3px solid rgb(181, 181, 233);
+    background-color:aliceblue;
+    padding:20px;
+    border-radius:7px;
 }
 
 #buttons{
