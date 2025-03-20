@@ -1,0 +1,31 @@
+* {
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+#jokes{
+    text-align: center;
+}
+
+#buttons{
+    display:flex;
+    gap:1rem;
+    justify-content: center;
+}
+
+button{
+    background-color: grey;
+    color:white;
+    border-radius:7px;
+}
