@@ -9,7 +9,7 @@ fetch("https://v2.jokeapi.dev/joke/Any?safe-mode")
 
 
     
-    joke.textContent = data.setup + " " + data.delivery; 
+    joke.textContent = data.setup + "..." + data.delivery; 
     }
 
 }); 
@@ -27,7 +27,7 @@ misc.addEventListener("click", function(){
         
 
     
-    joke.textContent = data.setup + " " + data.delivery; 
+    joke.textContent = data.setup + "..." + data.delivery; 
     }
    
 
@@ -45,7 +45,7 @@ programming.addEventListener("click", function(){
             joke.textContent = data.joke
         }
         else{
-            joke.textContent = data.setup + " " + data.delivery;
+            joke.textContent = data.setup + "..." + data.delivery;
         }
     });
 })
@@ -60,7 +60,7 @@ spooky.addEventListener("click", function(){
             joke.textContent = data.joke
         }
         else{
-            joke.textContent = data.setup + " " + data.delivery;
+            joke.textContent = data.setup + "..." + data.delivery;
         }
     });
 })
@@ -75,7 +75,7 @@ christmas.addEventListener("click", function(){
             joke.textContent = data.joke
         }
         else{
-            joke.textContent = data.setup + " " + data.delivery;
+            joke.textContent = data.setup + "..." + data.delivery;
         }
     });
 })
@@ -90,9 +90,26 @@ pun.addEventListener("click", function(){
             joke.textContent = data.joke
         }
         else{
-            joke.textContent = data.setup + " " + data.delivery;
+            joke.textContent = data.setup + "..." + data.delivery;
         }
     });
 })
+
+pun.addEventListener("click", function(){
+    console.log("pun");
+    fetch("https://v2.jokeapi.dev/joke/Pun?safe-mode")
+    .then(response => response.json())
+    .then(data => {
+        console.log(title);
+        if(data.title = " "){
+            title.textContent = "Generate New Pun" + data.title;
+        }
+        else{
+            title.textContent = data.title;
+        }
+    });
+    
+})
+
 
 
